@@ -1,3 +1,4 @@
+import Notiflix from 'notiflix';
 export function fetchCountries(name) {
   const URL = `https://restcountries.com/v3.1/name/${name}`;
   return fetch(URL, {
@@ -7,7 +8,7 @@ export function fetchCountries(name) {
     },
   })
     .then(response => {
-      if (!response.ok) throw new Error('There was an error');
+      if (!response.ok)  Notiflix.Notify.failure("Oops, there is no country with that name");
       return response.json();
     })
     .then(body => {
