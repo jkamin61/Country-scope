@@ -1,11 +1,11 @@
 {
-  "name": "goit-js-hw-10",
+  "name": "country-scope",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://jkamin61.github.io/goit-js-hw-10/",
+  "homepage": "https://jkamin61.github.io/Country-scope/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-10/"
+    "build": "parcel build src/*.html --public-url /Country-scope/"
   },
   "repository": {
     "type": "git",
